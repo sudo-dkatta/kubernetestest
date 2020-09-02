@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: voating-app-pod
+  labels:
+    name: voating-app-pod
+    app: demo-voating-app
+
+spec:
+  containers:
+    - name: voating-app
+      image: dockersample/examplevoatingapp_vote
+      ports:
+        - containerPort: 80
